@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='show_style.css') }}">
+    <title>News Index</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="name">
+          <a href="https://www.linkedin.com/in/javierruizruiz/">
+            <h2>javi ruiz</h2>
+          </a>
+        </div>
+        <div class="again">
+          <a href="http://127.0.0.1:5000/news/category">
+            <h2>Try Again</h2>
+          </a>
+          <h4>{{ category }}</h4>
+        </div>
+        <div class="logo">
+          <img class="img-logo" src="/static/images/logo.png" alt="">
+        </div>
+      </nav>
+    </header>
+    <main class="form-list">
+      <div class="news">
+        <h3>Categories availables:</h3>
+        <ul>
+          <li>business</li>
+          <li>entertaiment</li>
+          <li>health</li>
+          <li>science</li>
+          <li>sports</li>
+          <li>technology</li>
+        </ul>
+      </div>
+      <div class="news">
+        <h4 class="message">{{ no_category }} </h4>
+        <form action="/news/show" method="post">
+          <label>Category:</label>
+          <input type="text" name="category_code">
+          <button>Submit</button>
+        </form>
+        
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/javierruizruiz/">
+        <img class="img-logo" src="/static/images/bird.png" alt="">
+      </a>
+    </footer>
+  </body>
+</html>

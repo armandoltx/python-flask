@@ -1,0 +1,120 @@
+/*comments */
+
+html {
+  background: grey;    /*#FEDCBA;*/
+  font-family: "Times New Roman", serif.
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white; /* rgb(200, 255, 0); */
+}
+
+header {
+  background-color: #232F3D;
+  border-bottom: 3px solid #e5131e;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+nav > div > a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > div > a:hover {
+  color: #e5131e;
+  text-decoration: none;
+}
+
+.name {
+  padding: 40px 15px 10px 30px;
+}
+
+.again {
+  flex-grow: 1;
+  text-align: center;
+  padding: 40px 15px 10px 15px;
+  color: white;
+}
+
+.logo {
+  padding: 15px 30px 10px 0;
+}
+
+.img-logo {
+    width: 150px;
+    height: auto;
+}
+ a {
+   text-decoration: none;
+ }
+
+main > h1, main > h2 {
+  text-align: center;
+}
+
+article {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.form-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.news {
+  width: 50%;
+  padding: 10px;
+}
+
+.news > a > h2 {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.news > a > h2:hover {
+  color: #e5131e;
+  text-decoration: none;
+}
+
+.news > img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+li {
+  font-size: 20px;
+}
+
+form {
+  margin-top: 70px;
+}
+
+.message {
+  color: #e5131e;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #232F3D;
+  border-top: 3px solid #e5131e;
+}
+
+footer > a > img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}

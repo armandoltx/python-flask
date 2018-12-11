@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show Index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='show_style.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="name">
+          <a href="https://www.linkedin.com/in/javierruizruiz/"><h2>javi ruiz</h2></a>
+        </div>
+        <div class="again">
+          <a href="http://127.0.0.1:5000/news/category">
+            <h2>Try Again</h2>
+          </a>
+          <h4>{{ category }}</h4>
+        </div>
+        <div class="logo">
+          <img class="img-logo" src="/static/images/logo.png" alt="">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Most relevant today's Australian news</h1>
+      <h2>Get breaking news headlines from over 30,000 news sources and blogs</h2>
+      <article>
+        <div class="news">
+          <a href="{{url1}}" target="_blank">
+            <h2>{{ title1 }}</h2>
+          </a>
+          <p>{{ description1 }}</p>
+          <img src="{{image1}}" alt="image loading">
+        </div>
+        <div class="news">
+          <a href="{{url2}}" target="_blank">
+            <h2>{{ title2 }}</h2>
+          </a>
+          <p>{{ description2 }}</p>
+          <img src="{{image2}}" alt="image loading">
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/javierruizruiz/">
+        <img class="img-logo" src="/static/images/bird.png" alt="">
+      </a>
+    </footer>
+  </body>
+</html>
