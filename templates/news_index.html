@@ -25,26 +25,29 @@
       </nav>
     </header>
     <main class="form-list">
-      <div class="news">
-        <h3>Categories availables:</h3>
-        <ul>
-          <li>business</li>
-          <li>entertaiment</li>
-          <li>health</li>
-          <li>science</li>
-          <li>sports</li>
-          <li>technology</li>
-        </ul>
-      </div>
-      <div class="news">
-        <h4 class="message">{{ no_category }} </h4>
-        <form action="/news/show" method="post">
-          <label>Category:</label>
-          <input type="text" name="category_code">
-          <button>Submit</button>
-        </form>
-        
-      </div>
+      <h1>Most relevant today's Australian news</h1>
+      <h2>Get breaking news headlines from over 30,000 news sources and blogs</h2>
+      <article>
+        <div class="news list">
+          <h3>Categories availables:</h3>
+          <ul>
+            <li>business</li>
+            <li>entertainment</li>
+            <li>health</li>
+            <li>science</li>
+            <li>sports</li>
+            <li>technology</li>
+          </ul>
+        </div>
+        <div class="news">
+          <h4 class="message">{{ no_category }} </h4>
+          <form action="/news/show" method="post">
+            <label>Category:</label>
+            <input type="text" name="category_code">
+            <button>Submit</button>
+          </form>
+        </div>
+      </article>
     </main>
     <footer>
       <a href="https://www.linkedin.com/in/javierruizruiz/">

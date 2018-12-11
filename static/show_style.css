@@ -66,10 +66,8 @@ article {
   align-items: stretch;
 }
 
-.form-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+.list {
+  margin-left: 80px;
 }
 
 .news {
